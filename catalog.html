@@ -7,10 +7,10 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container">
-				<div class="header-left">
+			<div class="container clearfix">
+				<div class="header-left clearfix">
 					<div class="logo">
-						<img src="img/logo.png" width="100" height="100" alt="Gllacy Shop">
+						<img src="img/logo.png" width="154" height="64" alt="Gllacy Shop Logo">
 					</div>
 					<nav class="main-navigation">
 						<ul>
@@ -33,7 +33,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="header-right">
+				<div class="header-right clearfix">
 					<div class="user-block">
 						<a class="search" href="#">Поиск</a>
 							<ul>
@@ -70,6 +70,10 @@
 						<p>8 812 450-25-25</p>
 					</div>
 				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
 				<nav class="breadcrumbs">
 					<ul>
 						<li>
@@ -83,14 +87,12 @@
 						</li>
 					</ul>
 				</nav>
+				<h1 class="icecream-type">Сливочное мороженое</h1>
 			</div>
-		</header>
-		<main>
-			<h1 class="icecream-type">Сливочное мороженое</h1>
 			<section class="filter">
 				<div class="container">
 					<form action="https://echo.htmlacademy.ru" method="get">
-						<div class="select-category">
+						<div class="filter-category">
 							<label for="sort-field">Сортировка:</label><br>
 								<select name="sort" id="sort-field">
 									<option value="popularity">по популярности</option>
@@ -99,11 +101,11 @@
 									<option value="fat">по жирности</option>
 								</select>							
 						</div>
-						<div class="select-price">
+						<div class="filter-price">
 							<label>Цена: 100 руб. - 500 руб.</label><br>
 								<input type="range" min="0" max="1000" step="10">
 						</div>
-						<div class="select-fat">
+						<div class="filter-fat">
 							<label>Жирность:</label><br>
 								<label>
 									<input type="radio" name="fat-percent" value="0%">
@@ -122,7 +124,7 @@
 									выше 30%
 								</label>
 						</div>
-						<div class="select-filler">
+						<div class="filter-filler">
 							<label>Наполнители:</label><br>
 								<input type="checkbox" name="filler-shoko" id="filler-shoko-field" checked>
 								<label for="filler-shoko-field">шоколадные</label>
@@ -135,12 +137,12 @@
 								<input type="checkbox" name="filler-jam" id="filler-jam-field">
 								<label for="filler-jam-field">джемы</label>
 						</div>
-						<button type="submit">Применить</button>
+						<button class="btn btn-regular btn-filter" type="submit">Применить</button>
 					</form>
 				</div>
 			</section>
 			<section class="catalog">
-				<div class="catalog-items">
+				<div class="container clearfix">
 					<figure class="catalog-item">
 						<img src="img/ic_1.png" width="267" height="267" alt="">
 						<p class="price">310 р/кг</p>
@@ -225,14 +227,14 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="container">
+			<div class="container clearfix">
 				<section class="footer-left">
 					<a class="social-btn social-btn-twit" href="#">Твиттер</a>
          			<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           			<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
 					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
 				</section>
-				<section class="footer-center">
+				<section class="footer-center clearfix">
 					<div class="footer-production">
 						<a class="supplier" href="#">Для поставщиков</a>
 	         			<a class="production" href="#">Производство</a>
